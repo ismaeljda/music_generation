@@ -254,10 +254,6 @@ def main():
         prompt="upbeat pop song with",  
         described_lyrics="A cheerful tune about sunny days and happiness.")
     
-    headers = {
-        "Modal-Key": "wk-zsSdBQexVhcdZ1ePXvD9nH",
-        "Modal-Secret": "ws-uMEGsGgwUn6ml0Y6nIF7wt"
-    }
     song_data = song_request.model_dump()
 
     response = requests.post(endpoint_url, json=song_data)
